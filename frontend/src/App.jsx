@@ -122,7 +122,7 @@ export default function App() {
     const t0 = performance.now()
 
     try {
-      const res = await fetch(`${API_BASE}/${algo}`, {
+        const res = await fetch(`${API_BASE}/api/sort/${algo}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ array: arrayRef.current }),
