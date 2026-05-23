@@ -4,7 +4,7 @@ import ArrayContainer from './components/ArrayContainer.jsx'
 import InfoPanel from './components/InfoPanel.jsx'
 import CustomArrayInput from './components/CustomArrayInput.jsx'
 
-const API_BASE = import.meta.env.VITE_API_URL;
+const API_BASE = import.meta.env.VITE_API_URL || 'http://20.219.136.125:8080';
 const SPEED_DELAYS = [600, 180, 60, 20, 5]  // ms per step (speed 1–5)
 
 function generateRandomArray(size) {
